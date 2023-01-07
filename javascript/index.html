@@ -1,0 +1,19 @@
+let empolyees = [
+{ id: 101, name:"rahul",sal:45000},
+{ id: 102, name:"priyanka",sal:45000},
+{ id:103, name: "sonia", sal:45000},
+{ id:104, name:"robert",sal:85000},
+];
+function display(){
+    let tbody = document.getelementbyid("table_body");
+    let rows = "";
+    for(emp of employees){
+        rows =
+        rows +
+        <tr><td> ${emp.id}</td>
+            <td> ${emp.name}</td>
+            <td> ${emp.sal}</td>
+        </tr>;
+    }
+    tbody.innerhtml = rows;
+}
